@@ -1,23 +1,27 @@
 
 public class Circle {
+	public static final int PLAYER=0;
+	public static final int WALL=1;
+	public static final int APPLE=2;
+	public static final int TAIL=3;
 	 private char image;
 	  private int x;
 	  private int y;
 	  private int dx;
 	  private int dy;
-	  private boolean isWall;
+	  private int type;
 
-	  public Circle(char image, int x, int y, int dx, int dy, boolean isWall) {
+	  public Circle(char image, int x, int y, int dx, int dy, int type) {
 	   this.image = image;
 	   this.x = x;
 	   this.y = y;
 	   this.dx = dx;
 	   this.dy = dy;
-	   this.isWall = isWall;
+	   this.type = type;
 	  }
 	  
-	  public boolean isWall(){
-		  return isWall;
+	  public int getType(){
+		  return type;
 	  }
 
 	  public void setSpeed(int dx, int dy) {

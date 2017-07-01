@@ -7,7 +7,7 @@ public class Screen {
 	  public void clearFrame() {
 	   for (int i = 0; i < Game.PAGE_SIZE; i++) {
 	    for (int j = 0; j < Game.PAGE_SIZE; j++) {
-	     arr[i][j] = '0';
+	     arr[i][j] = ' ';
 	    }
 	   }
 	  }
